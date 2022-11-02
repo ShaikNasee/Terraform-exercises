@@ -6,11 +6,11 @@ output "Secondary-vpc_id" {
  value= aws_vpc.vpcs[1].id
 
 }
-output "Primary-vpc-subnetsid" {
-    value = aws_subnet.subnets
-  
+output "subnetcount1" {
+    value = length(aws_subnet.subnets )
+
 }
-output "Secondary-vpc-subnetsids" {
-    value = aws_subnet.subnets2
+output "subnetcount2" {
+    value = length(aws_subnet.subnets)
   
 }

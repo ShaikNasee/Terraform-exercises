@@ -14,3 +14,7 @@ output "subnetcount2" {
     value = length(aws_subnet.subnets)
   
 }
+output "location" {
+    value = var.region
+  
+}
